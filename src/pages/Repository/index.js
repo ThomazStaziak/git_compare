@@ -11,22 +11,26 @@ export default function Repository({ match }) {
   const [issues, setIssues] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(async () => {
-    const repoName = decodeURIComponent(match.params.repository);
+  useEffect(() => {
+    async function fetch() {
+      const repoName = decodeURIComponent(match.params.repository);
 
-    const [repoDetails, issuesData] = await Promise.all([
-      api.get(`/repos/${repoName}`),
-      api.get(`/repos/${repoName}/issues`, {
-        params: {
-          state: 'open',
-          per_page: 5,
-        },
-      }),
-    ]);
+      const [repoDetails, issuesData] = await Promise.all([
+        api.get(`/repos/${repoName}`),
+        api.get(`/repos/${repoName}/issues`, {
+          params: {
+            state: 'open',
+            per_page: 5,
+          },
+        }),
+      ]);
 
-    setRepository(repoDetails.data);
-    setIssues(issuesData.data);
-    setLoading(false);
+      setRepository(repoDetails.data);
+      setIssues(issuesData.data);
+      setLoading(false);
+    }
+
+    fetch();
   }, [match.params.repository]);
 
   if (loading) {
