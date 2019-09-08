@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/git_compare/static/js/main.801453db.chunk.js",
-    "main.js.map": "/git_compare/static/js/main.801453db.chunk.js.map",
+    "main.js": "/git_compare/static/js/main.71195940.chunk.js",
+    "main.js.map": "/git_compare/static/js/main.71195940.chunk.js.map",
     "runtime~main.js": "/git_compare/static/js/runtime~main.1cd10923.js",
     "runtime~main.js.map": "/git_compare/static/js/runtime~main.1cd10923.js.map",
     "static/js/2.07fb7dae.chunk.js": "/git_compare/static/js/2.07fb7dae.chunk.js",
     "static/js/2.07fb7dae.chunk.js.map": "/git_compare/static/js/2.07fb7dae.chunk.js.map",
     "index.html": "/git_compare/index.html",
-    "precache-manifest.beffb13c9c7a616661e05f597fd6456d.js": "/git_compare/precache-manifest.beffb13c9c7a616661e05f597fd6456d.js",
+    "precache-manifest.4b514ac813a6d26758f66d9dd1d2d135.js": "/git_compare/precache-manifest.4b514ac813a6d26758f66d9dd1d2d135.js",
     "service-worker.js": "/git_compare/service-worker.js"
   }
 }
